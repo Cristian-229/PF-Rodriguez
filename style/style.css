@@ -143,7 +143,6 @@ p {
     /* Color del texto */
 }
 
-
 .Hero__contenedor {
     background-image: url(../assets/img/banner.png);
     padding-top: 1rem;
@@ -328,7 +327,6 @@ p {
     }
 }
 
-
 @media (min-width: 768px) {
     .Footer__links-titulo {
         font-size: 1.2rem;
@@ -336,7 +334,6 @@ p {
         display: inline;
     }
 }
-
 
 .Footer__iconos ul{
     display: flex;
@@ -350,7 +347,6 @@ p {
         margin-right: 9rem;
     }
 }
-
 
 .Footer ul li {
     display: inline-block;
@@ -416,10 +412,12 @@ p {
    
 }
 
-
+/*Formulario de Contacto*/
 label{
     color: white;
 }
+
+/*Eventos*/
 
 .bg-navidad{
     background: #ff121273;
