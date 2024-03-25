@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
   <title>Esquina Gastronómica</title>
 
 </head>
@@ -45,40 +46,61 @@
   </header>
 
   <main>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <form action="">
+            <div class="row">
+              <div class="col-12 col-md-6 mt-3">
+                <label for="nombre" class="form-label fs-5">Nombre</label>
+                <input type="text" class="form-control form-control-lg" placeholder="Nombre" id="nombre">      
+              </div>
+              <div class="col-12 col-md-6 mt-3">
+                <label for="correo" class="form-label fs-5">Correo</label>
+                <input type="email" class="form-control form-control-lg" placeholder="correo@correo.com" id="correo">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 col-md-6">
+                <label for="mensaje" class="form-label fs-5 mt-1">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="form-control form-control-lg h-100"></textarea>
+              </div>
 
-    <div class="contenedor_contacto">
-        <form  action="success.html">
-          <fieldset>
-            <div id="leyenda_formulario">
-            <legend style="color: aliceblue;">Recorda verificar si todos los datos son correctos antes de enviarlo</legend>
-          </div>
-          <div class="contenedor-campos">
-            <div class="campo">
-              <label>Nombre</label>
-              <input  name="name" required class="input-text" type="text" placeholder="Tu Nombre">
+              <div class="col-12 col-md-6 mt-3">
+                <div class="row mt-1">
+                  <div class="col-6 mb-3">
+                    <label class="form-label fs-5">Horario de Contacto</label>
+                    <select name="horario" id="horario" class="form-select form-select-lg">
+                      <option value="mañana">Mañana</option>
+                      <option value="tarde">Tarde</option>
+                      <option value="noche">Noche</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label class="form-label fs-5">¿Es usted un distribuidor?</label>
+                    <select name="distribuidor" id="distribuidor" class="form-select form-select-lg">
+                      <option value="si">Sí</option>
+                      <option value="no">No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="text-center">
+                    <button type="submit" class="col-12 btn btn-lg btn-primary mt-5">Enviar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-    
-            <div class="campo">
-              <label>Teléfono</label>
-              <input name="tel" required class="input-text" type="tel" placeholder="Tu Teléfono">
-            </div>
-    
-            <div class="campo">
-              <label>Correo</label>
-              <input name="email" required class="input-text" type="email" placeholder="Tu Correo"> 
-            </div>
-    
-            <div class="campo">
-              <label>Mensaje</label>
-              <textarea name="message" required class="input-text"></textarea>
-            </div>
-          </div> <!--contenedor de campos-->
-          </fieldset>
-          <div class="contenedor_botonFormulario">
-            <input class="boton" id="formulario_boton" type="submit" value="Enviar">
-          </div> 
-        </form>
+          </form>
+        </div>
       </div>
+
+
+    </div>
+    
 
   </main>
 
@@ -108,6 +130,7 @@
 
   </footer>
 
+  <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

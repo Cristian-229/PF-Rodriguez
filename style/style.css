@@ -417,3 +417,24 @@ p {
 }
 
 
+label{
+    color: white;
+}
+
+.bg-navidad{
+    background: #ff121273;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+}
+
+.bg-añonuevo{
+        background: #1100ff4f;
+        border-radius: 2rem;
+        border: 2px solid #ffffff;
+}
+
+.bg-disfraces{
+    background: #6a00ce8c;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+}
