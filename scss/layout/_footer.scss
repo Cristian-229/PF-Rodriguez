@@ -46,9 +46,9 @@
                 display: flex;
             }
 
-        &__links-item
+        &-item
         {
-            .Footer__links-titulo
+            a
             {
                 @media (min-width: 768px) 
                     {

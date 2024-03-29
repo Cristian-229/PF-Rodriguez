@@ -57,7 +57,7 @@ h4 {
 
 p {
   font-family: "Lato", sans-serif;
-  color: black;
+  color: white;
   line-height: 1.7;
   font-size: 1.6rem;
 }
@@ -248,7 +248,7 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .Footer__links__links-item .Footer__links-titulo {
+  .Footer__links-item a {
     font-size: 1.2rem;
     color: rgb(233, 217, 243);
     display: inline;
