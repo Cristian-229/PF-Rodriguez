@@ -1,0 +1,42 @@
+.Platoestrella {
+    display: grid;
+    grid-template-columns: 1fr;  
+
+    @media (min-width: 768px) 
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  
+        }
+
+     &__plato
+     {
+        display: grid;
+
+        .Platoestrella__img
+        {
+            width: 50%;
+            border-radius: 5rem;
+            padding: 1rem;
+            border-color: white;
+            border-style: solid;
+            justify-self: center;
+        }
+     }       
+}
+
+.VideoEvento
+{
+    iframe 
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        display: block;
+    } 
+
+    &__video 
+    {
+        text-align: center;
+        max-width: 85%;
+    }
+}

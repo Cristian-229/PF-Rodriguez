@@ -1,0 +1,41 @@
+.Acerca {
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 768px) 
+        {
+            grid-template-columns: 2fr 1fr;
+            margin-top: 5rem;
+            align-items: start;
+            text-align: center;
+            /*alinea horizontalmente*/
+            gap: 2rem;
+            border-left: #fffffffa inset;
+            border-radius: 10rem;
+            margin-bottom: 5rem;
+        }
+
+        &__descripcion
+        {
+            h2, p
+            {
+                margin-left: 0.5rem;
+                color: white;
+            } 
+        }
+
+    &__imagen
+    {
+        border: 0.5rem double rgb(250, 250, 200);
+         border-radius: 5rem;
+         margin-top: 3.5rem;
+
+        &-jpg 
+        {
+            max-width: 100%;
+            border-radius: 5rem;
+        }
+    }    
+    
+}
