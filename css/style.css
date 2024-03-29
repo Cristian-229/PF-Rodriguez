@@ -59,6 +59,7 @@ p {
     margin: 0 auto;
 }
 
+/*Todavia no esta/*/
 .titulo_centrado {
     text-align: center;
     color: white;
@@ -206,6 +207,7 @@ p {
     /* Ajusta el margen superior según sea necesario */
 }
 
+/*KHE ES ESTO*/
 #banner_index {
     max-width: 100%;
 }

@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    /*hace que el pading no afecte el ancho de los elementos*/
+    font-size: 62.5%;
+    /*el hack del rem*/
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.Cuerpo {
+    background-image: url(../assets/img/wallpaper.png);
+    position: relative;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

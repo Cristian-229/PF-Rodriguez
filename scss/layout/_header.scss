@@ -1,0 +1,137 @@
+.Hero
+{
+    background-color: rgba(255, 251, 251, 0.068);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) 
+    {
+        justify-content: space-between;
+            flex-direction: row;
+    }
+
+    &__logo 
+    {
+        align-self: flex-start;
+        margin: 1rem;
+
+        @media (min-width: 768px) 
+        {
+                align-self: center;
+        }
+    }
+
+    &__logo-img
+    {
+        height: auto;
+        width: 5rem;
+        border-radius: 10rem;
+        /* Tamaño del logo */
+
+        @media (min-width: 768px) 
+            {
+                height: auto;
+                width: 100px;
+                border-radius: 10rem;
+                /* Tamaño del logo */
+            }
+    }
+
+    &__navegacion
+    {
+        align-self: flex-center;
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) 
+        {
+                margin-top: 2rem;
+                margin-right: 4rem;
+        }
+
+        ul {
+            list-style: none;
+            li 
+            {
+                text-align: center;
+                margin-bottom: 1.5rem;
+
+                @media (min-width: 768px) 
+                {
+                    display: inline-block;
+                    margin-left: 20px;   
+                }
+            }
+        }
+
+        &-enlace {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }    
+    }
+}
+
+.Hero__contenedor 
+{
+    background-image: url(../assets/img/banner.png);
+    padding-top: 1rem;
+    height: 15rem;
+    margin: 0 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 768px) 
+    {
+        background-image: url(../assets/img/banner.png);
+        height: 45rem;
+        margin: 0 0;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 0.5rem;
+        /* Ajusta el margen superior según sea necesario */
+    }
+
+    h2 {
+        color: white;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        /* Ajusta el margen inferior según sea necesario */
+    }
+
+    .Hero__titulo 
+    {
+        text-align: center;
+
+        h2 
+        {
+            font-size: 2rem;
+        }
+
+        h1 
+        {
+            font-size: 3rem;
+        }
+
+        @media (min-width: 768px) 
+        {
+            position: absolute;
+            /* Posicionamiento absoluto para controlar la posición del título */
+            bottom: 0;
+            /* Coloca el título en la parte inferior del contenedor */
+            left: 0;
+            /* Coloca el título en la parte izquierda del contenedor */
+            padding: 20px;
+            /* Añade espacio alrededor del título si es necesario */
+        }
+    }
+}
