@@ -65,11 +65,21 @@
             }
         }
 
-        &-enlace {
+        &-enlace 
+        {
             font-size: 2rem;
             text-decoration: none;
             color: white;
+
+            &:hover
+            {
+                color: rgba(228, 159, 255, 0.623);
+            }
         }    
+
+        .activo{
+            color: rgba(228, 159, 255, 0.623);
+        }
     }
 }
 
@@ -95,13 +105,15 @@
         width: 100%;
     }
 
-    h1 {
+    h1 
+    {
         color: white;
         margin-top: 0.5rem;
         /* Ajusta el margen superior según sea necesario */
     }
 
-    h2 {
+    h2 
+    {
         color: white;
         margin-top: 0rem;
         margin-bottom: 0.5rem;

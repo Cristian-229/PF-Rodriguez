@@ -1,15 +1,21 @@
+/*-----Variables-----*/
 @import "utilities/variables";
+/*-----Utilidades-----*/
 @import "utilities/contenedor";
 @import "utilities/_titulo_centrado";
+/*-----Base-----*/
 @import "base/reset";
 @import "base/body";
 @import "base/fonts";
 @import "base/links";
+/*-----Componentes-----*/
 @import "components/buttons";
+/*-----Layout-----*/
 @import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/forms";
+/*-----Vistas-----*/
 @import "views/inicio";
 @import "views/nosotros";
 @import "views/eventos";

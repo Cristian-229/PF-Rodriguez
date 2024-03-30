@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*-----Variables-----*/
+/*-----Utilidades-----*/
 .Contenedor {
   max-width: 120rem;
   width: 90%;
@@ -10,6 +12,7 @@
   color: white;
 }
 
+/*-----Base-----*/
 html {
   box-sizing: border-box;
   /*hace que el pading no afecte el ancho de los elementos*/
@@ -60,15 +63,16 @@ p {
   color: white;
   line-height: 1.7;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
+/*-----Componentes-----*/
 .Boton {
   font-family: "Montserrat", sans-serif;
-  color: rgb(230, 178, 187);
   text-align: center;
   padding: 0.5rem 0.6rem;
   font-size: 1.8rem;
@@ -79,8 +83,21 @@ a {
   border-radius: 2rem;
   margin-left: 2rem;
   transition: background-color 0.6s ease;
+  background-color: rgb(207, 207, 207);
+}
+.Boton:hover {
+  background-color: rgb(56, 56, 252);
+}
+.Boton:hover a {
+  color: white;
+  font-size: 1.5rem;
+}
+.Boton a {
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
+/*-----Layout-----*/
 .Contenedor {
   max-width: 120rem;
   width: 90%;
@@ -150,6 +167,12 @@ a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
+}
+.Hero__navegacion-enlace:hover {
+  color: rgba(228, 159, 255, 0.623);
+}
+.Hero__navegacion .activo {
+  color: rgba(228, 159, 255, 0.623);
 }
 
 .Hero__contenedor {
@@ -252,6 +275,7 @@ a {
     font-size: 1.2rem;
     color: rgb(233, 217, 243);
     display: inline;
+    text-decoration: none;
   }
 }
 .Footer__iconos ul {
@@ -298,6 +322,7 @@ label {
   color: white;
 }
 
+/*-----Vistas-----*/
 .Platoestrella {
   display: grid;
   grid-template-columns: 1fr;
