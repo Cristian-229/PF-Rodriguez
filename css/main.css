@@ -175,57 +175,63 @@ a {
   color: rgba(228, 159, 255, 0.623);
 }
 
-.Hero__contenedor {
-  background-image: url(../assets/img/banner.png);
-  padding-top: 1rem;
-  height: 15rem;
-  margin: 0 0;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+.banner {
   width: 100%;
+  min-height: 40vh;
+  overflow: hidden;
+  position: relative;
 }
-@media (min-width: 768px) {
-  .Hero__contenedor {
-    background-image: url(../assets/img/banner.png);
-    height: 45rem;
-    margin: 0 0;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    width: 100%;
+.banner video {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .banner video {
+    min-height: 20rem;
   }
 }
-.Hero__contenedor h1 {
-  color: white;
-  margin-top: 0.5rem;
-  /* Ajusta el margen superior según sea necesario */
+@media (max-width: 768px) {
+  .banner {
+    min-height: 20rem;
+  }
 }
-.Hero__contenedor h2 {
+.banner__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
   color: white;
-  margin-top: 0rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .banner__text {
+    text-align: center;
+    /* Centra el texto cuando la pantalla es más pequeña */
+    left: 50%;
+    /* Mueve el texto al centro horizontal */
+    top: 20%;
+    transform: translateX(-50%);
+    /* Centra horizontalmente el texto */
+  }
+}
+.banner__text h1 {
+  font-size: 4rem;
   margin-bottom: 0.5rem;
-  /* Ajusta el margen inferior según sea necesario */
 }
-.Hero__contenedor .Hero__titulo {
-  text-align: center;
+@media (max-width: 768px) {
+  .banner__text h1 {
+    font-size: 1.7rem;
+  }
 }
-.Hero__contenedor .Hero__titulo h2 {
+.banner__text h2 {
   font-size: 2rem;
+  margin-top: 0;
 }
-.Hero__contenedor .Hero__titulo h1 {
-  font-size: 3rem;
-}
-@media (min-width: 768px) {
-  .Hero__contenedor .Hero__titulo {
-    position: absolute;
-    /* Posicionamiento absoluto para controlar la posición del título */
-    bottom: 0;
-    /* Coloca el título en la parte inferior del contenedor */
-    left: 0;
-    /* Coloca el título en la parte izquierda del contenedor */
-    padding: 20px;
-    /* Añade espacio alrededor del título si es necesario */
+@media (max-width: 768px) {
+  .banner__text h2 {
+    font-size: 1.4rem;
   }
 }
 
