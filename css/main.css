@@ -175,30 +175,6 @@ a {
   color: rgba(228, 159, 255, 0.623);
 }
 
-.overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-.overlay H2 {
-  position: absolute;
-  width: 15rem;
-  position: absolute;
-  bottom: 0;
-  margin-left: 2rem;
-}
-.overlay img {
-
-  width: 15rem;
-  position: absolute;
-  bottom: 0;
-  margin-left: 2rem;
-}
-
 .banner {
   width: 100%;
   min-height: 40vh;
@@ -353,6 +329,51 @@ label {
 }
 
 /*-----Vistas-----*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 70, 70, 0.35);
+  z-index: 1;
+}
+
+.star {
+  position: relative;
+  color: rgb(219, 219, 6);
+  font-size: 2rem;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .star {
+    font-size: 5rem;
+  }
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 4rem;
+  }
+}
+.carousel-caption p {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .carousel-caption p {
+    font-size: 2rem;
+  }
+}
+
 .Platoestrella {
   display: grid;
   grid-template-columns: 1fr;
