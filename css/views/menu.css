@@ -1,0 +1,14 @@
+.horarios__img {
+  width: 100%;
+}
+
+.plato-menu {
+  width: 50%;
+  border-radius: 5rem;
+  padding: 1rem;
+  border-color: white;
+  border-style: solid;
+  justify-self: center;
+}
+
+/*# sourceMappingURL=menu.css.map */
