@@ -6,10 +6,10 @@
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-y: auto;
 
-    &__efectos 
-    {
+    &__efectos {
+    position: relative;
+    
     span{
         position: absolute;
         top: 50%;
@@ -21,7 +21,8 @@
         box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
         0 0 0 8px rgba(255,255,255,0.1),
         0 0 20px rgba(255,255,255,1);
-        animation: animate 8s linear infinite;
+        animation: animate 3s linear infinite;
+        z-index: -1;
         }
         
         span::before
@@ -30,9 +31,10 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 300px;
+        width: 80PX;
         height: 1px;
         background: linear-gradient(90deg,#fff, transparent);
+        z-index: -1;
         }
         
         
