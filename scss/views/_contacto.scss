@@ -1,0 +1,27 @@
+.reloj{
+    
+    max-height:200px;
+    animation-name: movimiento-reloj;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes movimiento-reloj {
+    0%, 100% {
+        transform: translateY(0); /* Sin desplazamiento vertical */
+    }
+    20% {
+        transform: translateY(-5px);
+    }
+    40% {
+        transform: translateY(5px); /* Desplazamiento hacia arriba */
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+    80% {
+        transform: translateY(3px); /* Desplazamiento hacia abajo */
+    }
+}
